@@ -11,7 +11,7 @@
 (function(d, w) {
 	
 	var j = d.createElement('div'),
-		s = 'position:fixed;top:0;left:0;height:20px;color:#fff;background:rgba(0,0,0,.7);padding:5px 1em 2px;font:14px sans-serif;z-index:999999',
+		s = 'position:fixed;top:0;left:0;color:#fff;background:rgba(0,0,0,.7);padding:5px 1em;font:14px sans-serif;z-index:999999',
 		u = function() {
 			// Set div's content:
 			if ( d.all )
