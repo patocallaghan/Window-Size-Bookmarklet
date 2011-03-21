@@ -8,17 +8,21 @@
  */
 
 // Create new div and text for style attribute, create function for window resize:
-(function(d, w) {
+(function() {
 	
-	var j = d.createElement('div'),
-		s = 'position:fixed;top:0;left:0;color:#fff;background:rgba(0,0,0,.7);padding:5px 1em;font:14px sans-serif;z-index:999999',
-		u = function() {
+	var d = document,
+        w = window,
+        j = d.createElement('div'),
+		s = 'position:fixed;top:0;left:0;color:#fff;background:#222;padding:5px 1em;font:14px sans-serif;z-index:999999',
+		r = function() {
 			// Set div's content:
-			if ( d.all )
+            if ( w.innerWidth === undefined )
+                j.innerText = d.documentElement.clientWidth + 'x' + d.documentElement.clientHeight;
+			else if ( d.all )
 				j.innerText = w.innerWidth + 'x' + w.innerHeight;
 			else
 				// Firefox:
-				j.textContent = w.innerWidth + 'x' + w.innerHeight;
+				j.textContent = window.innerWidth + 'x' + window.innerHeight;
 		};
 	
 	// Append new div to body element:
@@ -31,14 +35,14 @@
 		j.setAttribute('style', s);
 	
 	// Set div's content:
-	u();
+	r();
 	
 	// Bind window resize event:
     if ( w.addEventListener )
-	    w.addEventListener('resize', u, false);
+	    w.addEventListener('resize', r, false);
     else if ( w.attachEvent )
-        w.attachEvent('onresize', u);
+        w.attachEvent('onresize', r);
     else
-        w.onresize = u;
+        w.onresize = r;
 	
-})(document, window);
+})();
