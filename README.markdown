@@ -7,7 +7,6 @@ Check out the blog post at [http://www.josscrowcroft.com/2011/code/window-size-b
 
 NB: to use this as a bookmarklet, make sure to stick `javascript:` in front of the minified code, then use that as the href/address of the bookmark.
 
-- Joss
 
 Changelog:
 ----------
