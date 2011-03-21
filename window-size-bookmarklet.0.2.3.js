@@ -10,19 +10,21 @@
 // Create new div and text for style attribute, create function for window resize:
 (function() {
 	
-	var d = document,
+    var d = document,
         w = window,
         j = d.createElement('div'),
-		s = 'position:fixed;top:0;left:0;color:#fff;background:#222;padding:5px 1em;font:14px sans-serif;z-index:999999',
-		r = function() {
-			// Set div's content:
+        s = 'position:fixed;top:0;left:0;color:#fff;background:#222;padding:5px 1em;font:14px sans-serif;z-index:999999',
+        r = function() {
+            // Set div's content:
             if ( w.innerWidth === undefined )
+                // IE 6-8:
                 j.innerText = d.documentElement.clientWidth + 'x' + d.documentElement.clientHeight;
-			else if ( d.all )
-				j.innerText = w.innerWidth + 'x' + w.innerHeight;
-			else
-				// Firefox:
-				j.textContent = window.innerWidth + 'x' + window.innerHeight;
+            else if ( d.all )
+                // Others:
+                j.innerText = w.innerWidth + 'x' + w.innerHeight;
+            else
+                // Firefox:
+                j.textContent = window.innerWidth + 'x' + window.innerHeight;
 		};
 	
 	// Append new div to body element:
