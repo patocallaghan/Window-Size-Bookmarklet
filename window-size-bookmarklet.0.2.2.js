@@ -1,5 +1,5 @@
 /**
- * Window Size Bookmarklet (unminified) 0.2.1 by @josscrowcroft
+ * Window Size Bookmarklet (unminified) 0.2.3 by @josscrowcroft
  * http://www.josscrowcroft.com/2011/code/window-size-bookmarklet/
  * 
  * No warranty - but FWIW, I'm pretty sure it won't break the internet.
@@ -34,6 +34,11 @@
 	u();
 	
 	// Bind window resize event:
-	w.addEventListener('resize', u, false);
+    if ( w.addEventListener )
+	    w.addEventListener('resize', u, false);
+    else if ( w.attachEvent )
+        w.attachEvent('onresize', u);
+    else
+        w.onresize = u;
 	
 })(document, window);

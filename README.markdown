@@ -1,4 +1,4 @@
-WindowSize Bookmarklet
+Window Size Bookmarklet
 ----------------------
 
 A handy bookmarklet that displays the dynamic viewport/screen size in pixels on any website - useful for inspecting and debugging CSS3 `@media` queries and responsive/adaptive layouts. 
@@ -10,6 +10,7 @@ NB: to use this as a bookmarklet, make sure to stick `javascript:` in front of t
 
 Changelog:
 ----------
-* Updated v0.2.2   Rewrote to wrap in anonymous function
-* Updated v0.2.1   Fixed in Firefox
-* Updated v0.2     No longer relies on jQuery
+* v0.2.3   Fixed for lte IE8... I think.
+* v0.2.2   Rewrote to wrap in anonymous function
+* v0.2.1   Fixed in Firefox
+* v0.2     No longer relies on jQuery
