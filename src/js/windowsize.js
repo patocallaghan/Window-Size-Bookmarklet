@@ -156,7 +156,6 @@
         };
 
         var processKeypress = function (event) {
-            event.preventDefault();
             
             if(event.keyCode === 27) {
                 hideWindowSize();
