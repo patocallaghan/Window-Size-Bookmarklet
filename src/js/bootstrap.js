@@ -43,9 +43,9 @@
 	if(!window.Terabytelet || !window.Terabytelet[pluginName]){
 
 		var config = {
-			bootstrapUrl: 'http://localhost:8000/',
-			css: 'css/style.css',
-			js: 'js/windowsize.min.js'
+			bootstrapUrl: 'https://raw.github.com/patocallaghan/Window-Size-Bookmarklet/master/',
+			//css: 'css/style.css',
+			js: 'windowsize.min.js'
 		};
 
 		var Terabytelet = Terabytelet || {};
@@ -76,7 +76,7 @@
 		};
 
 		var filepath = config.bootstrapUrl;
-		loadFile(filepath + config.css, "css");
+		//loadFile(filepath + config.css, "css");
 		loadFile(filepath + config.js, "js");
 		window.Terabytelet = Terabytelet;
 
