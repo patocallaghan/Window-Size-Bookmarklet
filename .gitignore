@@ -34,6 +34,12 @@ local.properties
 *.sublime-workspace
 window-size-bookmarklet.js
 
+
+#################
+## SASS
+#################
+.sass-cache
+
 #################
 ## Visual Studio
 #################

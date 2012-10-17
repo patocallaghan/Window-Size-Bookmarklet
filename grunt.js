@@ -56,7 +56,7 @@ module.exports = function(grunt) {
 				tasks: ['min']
 			},
 			compass: {
-				files: ['css/scss/**/*.scss'],
+				files: ['src/css/scss/**/*.scss'],
 				tasks: ['compass:dev']
 			}
 		},
