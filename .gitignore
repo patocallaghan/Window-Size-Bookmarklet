@@ -35,11 +35,6 @@ local.properties
 window-size-bookmarklet.js
 
 #################
-## Grunt
-#################
-grunt.js
-
-#################
 ## Visual Studio
 #################
 
@@ -149,7 +144,6 @@ Desktop.ini
 # Packages
 *.egg
 *.egg-info
-dist
 build
 eggs
 parts
