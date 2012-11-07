@@ -43,7 +43,7 @@
 	if(!window.Terabytelet || !window.Terabytelet[pluginName]){
 
 		var config = {
-			bootstrapUrl: 'https://raw.github.com/patocallaghan/Window-Size-Bookmarklet/master/',
+			bootstrapUrl: 'https://raw.github.com/patocallaghan/Window-Size-Bookmarklet/master/dist/',
 			//css: 'css/style.css',
 			js: 'windowsize.min.js'
 		};
