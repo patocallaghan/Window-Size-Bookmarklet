@@ -31,7 +31,7 @@
             span = doc.createElement('span');
             containerStyle = 'position:fixed;top:0;left:0;color:#fff;background:#222;padding:5px 1em;font:14px sans-serif;z-index:999999';
             labelStyle = 'display: inline-block;padding: 0 5px;color:#fff;';
-            showEm = false;
+            showEm = true;
             defaultFontSize = Number(getComputedStyle(document.documentElement,null).fontSize.replace(/[^\d]/g, ''));
 
             container.appendChild(span);
