@@ -44,7 +44,9 @@
 
 		var config = {
 			bootstrapUrl: 'https://raw.github.com/patocallaghan/Window-Size-Bookmarklet/master/dist/',
+			//bootstrapUrl: 'http://localhost:8000/js/',
 			//css: 'css/style.css',
+			//js: 'windowsize.js'
 			js: 'windowsize.min.js'
 		};
 
