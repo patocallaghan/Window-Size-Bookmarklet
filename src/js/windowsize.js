@@ -38,8 +38,8 @@
 
             //Create px and em radio buttons
             createRadioLabel ('px');
-            createRadioInput ('px', true);
-            createRadioLabel ('em');
+            createRadioInput ('px', !showEm);
+            createRadioLabel ('em', showEm);
             createRadioInput ('px');
             
             // Append new div to body element:
